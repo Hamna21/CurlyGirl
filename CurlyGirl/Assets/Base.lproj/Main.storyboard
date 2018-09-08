@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gpE-Fg-FTJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Manager Navigation-->
+        <scene sceneID="mSO-9Z-YkB">
+            <objects>
+                <navigationController storyboardIdentifier="ManagerNavigation" title="Manager Navigation" id="gpE-Fg-FTJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="DIP-nh-0hl"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GSc-2i-mfY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pNx-ju-Fn0" kind="relationship" relationship="rootViewController" id="79h-Az-gbP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJ9-To-5cQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="748" y="-47.226386806596707"/>
+        </scene>
+        <!--Products View Controller-->
+        <scene sceneID="hj4-RL-rys">
+            <objects>
+                <viewController storyboardIdentifier="ProductsViewController" id="ukm-hd-0Vc" customClass="ProductsViewController" customModule="CurlyGirl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ofk-ga-WGg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kxe-Df-UUZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductCell" textLabel="wdF-Qr-5iD" detailTextLabel="ARN-NJ-pQk" style="IBUITableViewCellStyleSubtitle" id="zNF-nT-jqz">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zNF-nT-jqz" id="LcT-Ds-l1o">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="wdF-Qr-5iD">
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" id="ARN-NJ-pQk">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3gN-Yc-8SF" firstAttribute="trailing" secondItem="Kxe-Df-UUZ" secondAttribute="trailing" id="1IA-1L-xVr"/>
+                            <constraint firstItem="3gN-Yc-8SF" firstAttribute="bottom" secondItem="Kxe-Df-UUZ" secondAttribute="bottom" id="8V5-C4-TfS"/>
+                            <constraint firstItem="Kxe-Df-UUZ" firstAttribute="top" secondItem="3gN-Yc-8SF" secondAttribute="top" id="9Mv-Br-YKp"/>
+                            <constraint firstItem="Kxe-Df-UUZ" firstAttribute="leading" secondItem="3gN-Yc-8SF" secondAttribute="leading" id="Pn8-lL-WqN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3gN-Yc-8SF"/>
+                    </view>
+                    <connections>
+                        <outlet property="productTableView" destination="Kxe-Df-UUZ" id="D8W-gs-XSj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8JB-VT-d9e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="785"/>
+        </scene>
+        <!--Curly Girl-->
+        <scene sceneID="1X4-kZ-xu8">
+            <objects>
+                <viewController id="pNx-ju-Fn0" customClass="MainViewController" customModule="CurlyGirl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n71-xM-YUh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cw1-0t-V8s">
+                                <rect key="frame" x="37.5" y="104" width="300" height="30.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Hair Porosity">
+                                        <attributes>
+                                            <color key="NSColor" red="0.00038389026509582313" green="0.0010704958667027702" blue="0.0011738989637305464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="26" name="SFProDisplay-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8jC-tG-qVa">
+                                <rect key="frame" x="37" y="209" width="300" height="93.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Porosity refers to how well your hair is able to absorb and hold moisture. Knowing your hair's porosity can help you choose the right products to keep your hair well-moisturized, supple, strong and shiny.</string>
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="16" name="SFProText-Semibold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.12941176470588237" green="0.14509803921568629" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <real key="NSStrokeWidth" value="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuJ-JL-qMl">
+                                <rect key="frame" x="74.5" y="352.5" width="225" height="50"/>
+                                <color key="backgroundColor" red="0.33334206049999998" green="0.91511184869999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="gW8-cP-bF9"/>
+                                </constraints>
+                                <state key="normal" title="Find your hair porosity!"/>
+                                <connections>
+                                    <action selector="findHairPorosityButtonPressed:" destination="pNx-ju-Fn0" eventType="touchUpInside" id="FZW-2t-2vE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRG-14-lSI">
+                                <rect key="frame" x="74.5" y="432.5" width="225" height="50"/>
+                                <color key="backgroundColor" red="0.33334206049999998" green="0.91511184869999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Check Hair Products!"/>
+                                <connections>
+                                    <action selector="checkHairProductsButtonPressed:" destination="pNx-ju-Fn0" eventType="touchUpInside" id="JbM-7P-LdK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cw1-0t-V8s" firstAttribute="top" secondItem="91n-wR-1Pp" secondAttribute="top" constant="40" id="3Ia-5J-3iX"/>
+                            <constraint firstItem="eRG-14-lSI" firstAttribute="top" secondItem="SuJ-JL-qMl" secondAttribute="bottom" constant="30" id="H9b-3S-74X"/>
+                            <constraint firstItem="eRG-14-lSI" firstAttribute="height" secondItem="SuJ-JL-qMl" secondAttribute="height" id="NUc-pG-oSS"/>
+                            <constraint firstItem="eRG-14-lSI" firstAttribute="width" secondItem="SuJ-JL-qMl" secondAttribute="width" id="VzO-zE-wtT"/>
+                            <constraint firstItem="cw1-0t-V8s" firstAttribute="centerX" secondItem="91n-wR-1Pp" secondAttribute="centerX" id="dht-4X-c3v"/>
+                            <constraint firstItem="SuJ-JL-qMl" firstAttribute="top" secondItem="8jC-tG-qVa" secondAttribute="bottom" constant="50" id="erC-8A-ekU"/>
+                            <constraint firstItem="8jC-tG-qVa" firstAttribute="width" secondItem="n71-xM-YUh" secondAttribute="width" multiplier="0.8" id="fCE-2R-xOM"/>
+                            <constraint firstItem="cw1-0t-V8s" firstAttribute="width" secondItem="n71-xM-YUh" secondAttribute="width" multiplier="0.8" id="geb-HX-EdM"/>
+                            <constraint firstItem="eRG-14-lSI" firstAttribute="centerX" secondItem="91n-wR-1Pp" secondAttribute="centerX" id="gvR-eO-vzq"/>
+                            <constraint firstItem="SuJ-JL-qMl" firstAttribute="centerX" secondItem="91n-wR-1Pp" secondAttribute="centerX" id="l0H-MJ-pfs"/>
+                            <constraint firstItem="8jC-tG-qVa" firstAttribute="centerY" secondItem="91n-wR-1Pp" secondAttribute="centerY" multiplier="0.7" id="nBc-On-4Dt"/>
+                            <constraint firstItem="8jC-tG-qVa" firstAttribute="centerX" secondItem="91n-wR-1Pp" secondAttribute="centerX" id="plJ-e9-4sR"/>
+                            <constraint firstItem="SuJ-JL-qMl" firstAttribute="width" secondItem="n71-xM-YUh" secondAttribute="width" multiplier="0.6" id="xEP-kH-AeN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="91n-wR-1Pp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Curly Girl" id="VJZ-7X-tWo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="isD-7S-46n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1535.2" y="-43.628185907046479"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="ZNd-vB-9za">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" id="nQT-9p-Hcr" customClass="ResultViewController" customModule="CurlyGirl" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8j7-j3-gNO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k27-uR-XjF" userLabel="Question View">
+                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKD-ol-hKa">
+                                        <rect key="frame" x="26" y="22" width="190.5" height="24.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Select all that apply:">
+                                                <attributes>
+                                                    <font key="NSFont" size="21" name="SFProDisplay-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="J7G-EK-anD"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="MKD-ol-hKa" secondAttribute="trailing" id="NQn-WP-gyX"/>
+                                    <constraint firstItem="MKD-ol-hKa" firstAttribute="leading" secondItem="k27-uR-XjF" secondAttribute="leading" constant="26" id="UH5-eg-3Pg"/>
+                                    <constraint firstItem="MKD-ol-hKa" firstAttribute="top" secondItem="k27-uR-XjF" secondAttribute="top" constant="22" id="x2v-BM-z65"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gn5-QG-hOV">
+                                <rect key="frame" x="0.0" y="120" width="375" height="497"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" id="ENE-Uh-u7U" customClass="QuestionTableViewCell" customModule="CurlyGirl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ENE-Uh-u7U" id="dEp-J1-5qu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiV-PY-oB6">
+                                                    <rect key="frame" x="15" y="25" width="42" height="20"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="Label">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name="SFProText-Regular"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="TiV-PY-oB6" firstAttribute="centerY" secondItem="dEp-J1-5qu" secondAttribute="centerY" id="9MA-6n-IeC"/>
+                                                <constraint firstItem="TiV-PY-oB6" firstAttribute="leading" secondItem="dEp-J1-5qu" secondAttribute="leading" constant="15" id="TLx-eC-WBx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="questionLabel" destination="TiV-PY-oB6" id="Xmx-8p-ePX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nQT-9p-Hcr" id="XSf-Mo-1Ae"/>
+                                    <outlet property="delegate" destination="nQT-9p-Hcr" id="RGz-p8-nKP"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMC-71-X0q" customClass="LoadingButton" customModule="CurlyGirl" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.86823120175173973" green="1" blue="0.99146116517935112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XG2-0W-mtc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="SUBMIT"/>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="nQT-9p-Hcr" eventType="touchUpInside" id="h3K-4L-jRt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gn5-QG-hOV" firstAttribute="bottom" secondItem="iMC-71-X0q" secondAttribute="top" id="9Xr-GT-DEm"/>
+                            <constraint firstItem="7FJ-bX-L2D" firstAttribute="trailing" secondItem="iMC-71-X0q" secondAttribute="trailing" id="GPC-tp-s2V"/>
+                            <constraint firstItem="7FJ-bX-L2D" firstAttribute="trailing" secondItem="gn5-QG-hOV" secondAttribute="trailing" id="IwV-UI-ahO"/>
+                            <constraint firstItem="k27-uR-XjF" firstAttribute="leading" secondItem="7FJ-bX-L2D" secondAttribute="leading" id="LMl-qH-Scb"/>
+                            <constraint firstItem="7FJ-bX-L2D" firstAttribute="trailing" secondItem="k27-uR-XjF" secondAttribute="trailing" id="LnH-XW-hZl"/>
+                            <constraint firstItem="k27-uR-XjF" firstAttribute="top" secondItem="7FJ-bX-L2D" secondAttribute="top" id="Piz-r0-Jjs"/>
+                            <constraint firstItem="gn5-QG-hOV" firstAttribute="leading" secondItem="7FJ-bX-L2D" secondAttribute="leading" id="Qxf-Yw-GRZ"/>
+                            <constraint firstItem="iMC-71-X0q" firstAttribute="leading" secondItem="7FJ-bX-L2D" secondAttribute="leading" id="YcB-BF-5X8"/>
+                            <constraint firstItem="gn5-QG-hOV" firstAttribute="top" secondItem="k27-uR-XjF" secondAttribute="bottom" id="bTs-zb-ktn"/>
+                            <constraint firstItem="7FJ-bX-L2D" firstAttribute="bottom" secondItem="iMC-71-X0q" secondAttribute="bottom" id="w4E-53-hmR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7FJ-bX-L2D"/>
+                    </view>
+                    <connections>
+                        <outlet property="questionsTableView" destination="gn5-QG-hOV" id="ZQP-mq-kuD"/>
+                        <outlet property="submitButton" destination="iMC-71-X0q" id="Ask-Wo-QEM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIv-9M-lav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="-47"/>
+        </scene>
+    </scenes>
+</document>

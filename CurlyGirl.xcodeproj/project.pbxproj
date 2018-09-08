@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5AF87FF5244EC14B6ACF3CA /* Pods_CurlyGirl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D49A332AD95342081D4492A /* Pods_CurlyGirl.framework */; };
 		B10EFEFC213DAB9D009E4AC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFEFB213DAB9D009E4AC0 /* AppDelegate.swift */; };
-		B10EFEFE213DAB9D009E4AC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFEFD213DAB9D009E4AC0 /* ViewController.swift */; };
+		B10EFEFE213DAB9D009E4AC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFEFD213DAB9D009E4AC0 /* MainViewController.swift */; };
 		B10EFF01213DAB9D009E4AC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10EFEFF213DAB9D009E4AC0 /* Main.storyboard */; };
 		B10EFF03213DAB9E009E4AC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10EFF02213DAB9E009E4AC0 /* Assets.xcassets */; };
 		B10EFF06213DAB9E009E4AC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10EFF04213DAB9E009E4AC0 /* LaunchScreen.storyboard */; };
+		B10EFF10213DBFC9009E4AC0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF0F213DBFC9009E4AC0 /* ResultViewController.swift */; };
+		B10EFF19213E9876009E4AC0 /* HairAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF17213E9875009E4AC0 /* HairAPI.swift */; };
+		B10EFF1A213E9876009E4AC0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF18213E9876009E4AC0 /* Models.swift */; };
+		B10EFF1C213E98A9009E4AC0 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF1B213E98A8009E4AC0 /* RealmHelper.swift */; };
+		B10EFF1F213EAB2B009E4AC0 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF1E213EAB2B009E4AC0 /* QuestionTableViewCell.swift */; };
+		B10EFF21213EAD40009E4AC0 /* SpinnerButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF20213EAD40009E4AC0 /* SpinnerButtonHelper.swift */; };
+		B10EFF23213EBA5F009E4AC0 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF22213EBA5F009E4AC0 /* ProductsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F4D1B29AB9D4EDBAAB94EFB /* Pods-CurlyGirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurlyGirl.release.xcconfig"; path = "Pods/Target Support Files/Pods-CurlyGirl/Pods-CurlyGirl.release.xcconfig"; sourceTree = "<group>"; };
+		7D49A332AD95342081D4492A /* Pods_CurlyGirl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CurlyGirl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10EFEF8213DAB9D009E4AC0 /* CurlyGirl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurlyGirl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10EFEFB213DAB9D009E4AC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B10EFEFD213DAB9D009E4AC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B10EFEFD213DAB9D009E4AC0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B10EFF00213DAB9D009E4AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B10EFF02213DAB9E009E4AC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B10EFF05213DAB9E009E4AC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B10EFF07213DAB9E009E4AC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B10EFF0F213DBFC9009E4AC0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		B10EFF17213E9875009E4AC0 /* HairAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairAPI.swift; sourceTree = "<group>"; };
+		B10EFF18213E9876009E4AC0 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B10EFF1B213E98A8009E4AC0 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		B10EFF1E213EAB2B009E4AC0 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		B10EFF20213EAD40009E4AC0 /* SpinnerButtonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerButtonHelper.swift; sourceTree = "<group>"; };
+		B10EFF22213EBA5F009E4AC0 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		B90ADA5F5B5DF1B20864E4DF /* Pods-CurlyGirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurlyGirl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurlyGirl/Pods-CurlyGirl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5AF87FF5244EC14B6ACF3CA /* Pods_CurlyGirl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		892DB82AF7B88012AC4058B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D49A332AD95342081D4492A /* Pods_CurlyGirl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B10EFEEF213DAB9D009E4AC0 = {
 			isa = PBXGroup;
 			children = (
 				B10EFEFA213DAB9D009E4AC0 /* CurlyGirl */,
 				B10EFEF9213DAB9D009E4AC0 /* Products */,
+				B8F4A3B838509E15BFE84556 /* Pods */,
+				892DB82AF7B88012AC4058B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +83,70 @@
 		B10EFEFA213DAB9D009E4AC0 /* CurlyGirl */ = {
 			isa = PBXGroup;
 			children = (
+				B10EFF16213E984E009E4AC0 /* Network */,
 				B10EFEFB213DAB9D009E4AC0 /* AppDelegate.swift */,
-				B10EFEFD213DAB9D009E4AC0 /* ViewController.swift */,
-				B10EFEFF213DAB9D009E4AC0 /* Main.storyboard */,
-				B10EFF02213DAB9E009E4AC0 /* Assets.xcassets */,
-				B10EFF04213DAB9E009E4AC0 /* LaunchScreen.storyboard */,
+				B10EFF0D213DABBB009E4AC0 /* Controllers */,
+				B10EFF1D213EAAE7009E4AC0 /* Views */,
+				B10EFF0E213DABCF009E4AC0 /* Assets */,
+				B10EFF15213E9815009E4AC0 /* Util */,
 				B10EFF07213DAB9E009E4AC0 /* Info.plist */,
 			);
 			path = CurlyGirl;
+			sourceTree = "<group>";
+		};
+		B10EFF0D213DABBB009E4AC0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B10EFEFD213DAB9D009E4AC0 /* MainViewController.swift */,
+				B10EFF0F213DBFC9009E4AC0 /* ResultViewController.swift */,
+				B10EFF22213EBA5F009E4AC0 /* ProductsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B10EFF0E213DABCF009E4AC0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B10EFEFF213DAB9D009E4AC0 /* Main.storyboard */,
+				B10EFF04213DAB9E009E4AC0 /* LaunchScreen.storyboard */,
+				B10EFF02213DAB9E009E4AC0 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B10EFF15213E9815009E4AC0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B10EFF20213EAD40009E4AC0 /* SpinnerButtonHelper.swift */,
+				B10EFF1B213E98A8009E4AC0 /* RealmHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		B10EFF16213E984E009E4AC0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B10EFF18213E9876009E4AC0 /* Models.swift */,
+				B10EFF17213E9875009E4AC0 /* HairAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B10EFF1D213EAAE7009E4AC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B10EFF1E213EAB2B009E4AC0 /* QuestionTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8F4A3B838509E15BFE84556 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B90ADA5F5B5DF1B20864E4DF /* Pods-CurlyGirl.debug.xcconfig */,
+				3F4D1B29AB9D4EDBAAB94EFB /* Pods-CurlyGirl.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B10EFF0A213DAB9E009E4AC0 /* Build configuration list for PBXNativeTarget "CurlyGirl" */;
 			buildPhases = (
+				E9D50D482A86875AA0D3E9D9 /* [CP] Check Pods Manifest.lock */,
 				B10EFEF4213DAB9D009E4AC0 /* Sources */,
 				B10EFEF5213DAB9D009E4AC0 /* Frameworks */,
 				B10EFEF6213DAB9D009E4AC0 /* Resources */,
+				863AF98A48A9F98456881D59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +217,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		863AF98A48A9F98456881D59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CurlyGirl/Pods-CurlyGirl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CurlyGirl/Pods-CurlyGirl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D50D482A86875AA0D3E9D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CurlyGirl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B10EFEF4213DAB9D009E4AC0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10EFEFE213DAB9D009E4AC0 /* ViewController.swift in Sources */,
+				B10EFF21213EAD40009E4AC0 /* SpinnerButtonHelper.swift in Sources */,
+				B10EFEFE213DAB9D009E4AC0 /* MainViewController.swift in Sources */,
+				B10EFF19213E9876009E4AC0 /* HairAPI.swift in Sources */,
 				B10EFEFC213DAB9D009E4AC0 /* AppDelegate.swift in Sources */,
+				B10EFF1C213E98A9009E4AC0 /* RealmHelper.swift in Sources */,
+				B10EFF1F213EAB2B009E4AC0 /* QuestionTableViewCell.swift in Sources */,
+				B10EFF23213EBA5F009E4AC0 /* ProductsViewController.swift in Sources */,
+				B10EFF10213DBFC9009E4AC0 /* ResultViewController.swift in Sources */,
+				B10EFF1A213E9876009E4AC0 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +429,7 @@
 		};
 		B10EFF0B213DAB9E009E4AC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B90ADA5F5B5DF1B20864E4DF /* Pods-CurlyGirl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -295,6 +447,7 @@
 		};
 		B10EFF0C213DAB9E009E4AC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F4D1B29AB9D4EDBAAB94EFB /* Pods-CurlyGirl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
