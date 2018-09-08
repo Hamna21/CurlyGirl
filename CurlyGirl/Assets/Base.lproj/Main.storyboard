@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,33 +37,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kxe-Df-UUZ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kxe-Df-UUZ">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductCell" textLabel="wdF-Qr-5iD" detailTextLabel="ARN-NJ-pQk" style="IBUITableViewCellStyleSubtitle" id="zNF-nT-jqz">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductCell" id="zNF-nT-jqz" customClass="ProductTableViewCell" customModule="CurlyGirl" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zNF-nT-jqz" id="LcT-Ds-l1o">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="wdF-Qr-5iD">
-                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hUE-YX-0Sx">
+                                                    <rect key="frame" x="10" y="-3" width="75" height="75.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="hUE-YX-0Sx" secondAttribute="height" multiplier="1:1" id="0wc-1U-whX"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="JDf-ZD-StN">
+                                                    <rect key="frame" x="95" y="5" width="262.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" id="ARN-NJ-pQk">
-                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ile-dk-s7p">
+                                                    <rect key="frame" x="95" y="28" width="262.5" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="hUE-YX-0Sx" firstAttribute="centerY" secondItem="LcT-Ds-l1o" secondAttribute="centerY" id="F7L-RJ-Csj"/>
+                                                <constraint firstItem="Ile-dk-s7p" firstAttribute="top" secondItem="JDf-ZD-StN" secondAttribute="bottom" constant="5" id="Jga-RA-7Ne"/>
+                                                <constraint firstItem="Ile-dk-s7p" firstAttribute="leading" secondItem="hUE-YX-0Sx" secondAttribute="trailing" constant="10" id="JnR-EI-1cm"/>
+                                                <constraint firstItem="JDf-ZD-StN" firstAttribute="leading" secondItem="hUE-YX-0Sx" secondAttribute="trailing" constant="10" id="VGl-4D-ffa"/>
+                                                <constraint firstItem="hUE-YX-0Sx" firstAttribute="width" secondItem="LcT-Ds-l1o" secondAttribute="width" multiplier="0.2" id="VWQ-bk-K3x"/>
+                                                <constraint firstItem="hUE-YX-0Sx" firstAttribute="leading" secondItem="LcT-Ds-l1o" secondAttribute="leading" constant="10" id="Xsj-wF-u4G"/>
+                                                <constraint firstItem="JDf-ZD-StN" firstAttribute="width" secondItem="LcT-Ds-l1o" secondAttribute="width" multiplier="0.7" id="jPp-XJ-52s"/>
+                                                <constraint firstItem="JDf-ZD-StN" firstAttribute="top" secondItem="LcT-Ds-l1o" secondAttribute="top" constant="5" id="l5c-g3-SF7"/>
+                                                <constraint firstItem="Ile-dk-s7p" firstAttribute="width" secondItem="LcT-Ds-l1o" secondAttribute="width" multiplier="0.7" id="wow-AX-q0h"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="productImageView" destination="hUE-YX-0Sx" id="pCZ-W7-y8P"/>
+                                            <outlet property="productName" destination="JDf-ZD-StN" id="eFy-EH-H7n"/>
+                                            <outlet property="productType" destination="Ile-dk-s7p" id="o0w-S5-Lm7"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -98,7 +119,7 @@
                                     <fragment content="Hair Porosity">
                                         <attributes>
                                             <color key="NSColor" red="0.00038389026509582313" green="0.0010704958667027702" blue="0.0011738989637305464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="26" name="SFProDisplay-Bold"/>
+                                            <font key="NSFont" metaFont="system" size="26"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -106,14 +127,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8jC-tG-qVa">
-                                <rect key="frame" x="37" y="209" width="300" height="93.5"/>
+                                <rect key="frame" x="37" y="208" width="300" height="95.5"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Porosity refers to how well your hair is able to absorb and hold moisture. Knowing your hair's porosity can help you choose the right products to keep your hair well-moisturized, supple, strong and shiny.</string>
                                         <attributes>
                                             <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="16" name="SFProText-Semibold"/>
+                                            <font key="NSFont" metaFont="system" size="16"/>
                                             <real key="NSKern" value="0.0"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="leftToRight" minimumLineHeight="18" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
@@ -126,7 +147,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuJ-JL-qMl">
-                                <rect key="frame" x="74.5" y="352.5" width="225" height="50"/>
+                                <rect key="frame" x="74.5" y="353.5" width="225" height="50"/>
                                 <color key="backgroundColor" red="0.33334206049999998" green="0.91511184869999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="gW8-cP-bF9"/>
@@ -137,7 +158,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRG-14-lSI">
-                                <rect key="frame" x="74.5" y="432.5" width="225" height="50"/>
+                                <rect key="frame" x="74.5" y="433.5" width="225" height="50"/>
                                 <color key="backgroundColor" red="0.33334206049999998" green="0.91511184869999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Check Hair Products!"/>
                                 <connections>
@@ -185,7 +206,7 @@
                                         <attributedString key="attributedText">
                                             <fragment content="Select all that apply:">
                                                 <attributes>
-                                                    <font key="NSFont" size="21" name="SFProDisplay-Bold"/>
+                                                    <font key="NSFont" metaFont="system" size="21"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -215,7 +236,7 @@
                                                     <attributedString key="attributedText">
                                                         <fragment content="Label">
                                                             <attributes>
-                                                                <font key="NSFont" size="17" name="SFProText-Regular"/>
+                                                                <font key="NSFont" metaFont="system" size="17"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                             </attributes>
                                                         </fragment>

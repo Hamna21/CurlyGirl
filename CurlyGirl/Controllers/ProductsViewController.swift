@@ -71,18 +71,18 @@ extension ProductsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCell", for: indexPath) as! ProductTableViewCell
         let product = products[indexPath.row]
         
-        cell.textLabel?.text = product.name
-        cell.detailTextLabel?.text = product.type
-        cell.imageView?.sd_setShowActivityIndicatorView(true)
-        cell.imageView?.sd_setIndicatorStyle(.gray)
-        cell.imageView?.sd_setImage(with: URL(string: product.link)) { (image, error, cache, urls) in
+        cell.productName.text = product.name
+        cell.productType.text = product.type
+        cell.productImageView.sd_setShowActivityIndicatorView(true)
+        cell.productImageView.sd_setIndicatorStyle(.gray)
+        cell.productImageView.sd_setImage(with: URL(string: product.link)) { (image, error, cache, urls) in
             if(error != nil){
-                cell.imageView?.image = UIImage(named: "img_broken")
+                cell.productImageView.image = UIImage(named: "img_broken")
             } else {
-                cell.imageView?.image = image
+                cell.productImageView.image = image
             }
         }
         return cell

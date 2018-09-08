@@ -22,6 +22,7 @@
 		B12F6CC12144237B006FEFA4 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F6CBF2144237B006FEFA4 /* RealmHelper.swift */; };
 		B12F6CC2214423AA006FEFA4 /* RealmHelper.swift in Resources */ = {isa = PBXBuildFile; fileRef = B12F6CBF2144237B006FEFA4 /* RealmHelper.swift */; };
 		B12F6CC3214423AA006FEFA4 /* SpinnerButtonHelper.swift in Resources */ = {isa = PBXBuildFile; fileRef = B12F6CBE2144237B006FEFA4 /* SpinnerButtonHelper.swift */; };
+		B12F6CC621446428006FEFA4 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F6CC421446428006FEFA4 /* ProductTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B10EFF22213EBA5F009E4AC0 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		B12F6CBE2144237B006FEFA4 /* SpinnerButtonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerButtonHelper.swift; sourceTree = "<group>"; };
 		B12F6CBF2144237B006FEFA4 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		B12F6CC421446428006FEFA4 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		B90ADA5F5B5DF1B20864E4DF /* Pods-CurlyGirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurlyGirl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurlyGirl/Pods-CurlyGirl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				B10EFF1E213EAB2B009E4AC0 /* QuestionTableViewCell.swift */,
+				B12F6CC421446428006FEFA4 /* ProductTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				B12F6CC12144237B006FEFA4 /* RealmHelper.swift in Sources */,
 				B10EFF23213EBA5F009E4AC0 /* ProductsViewController.swift in Sources */,
 				B10EFF10213DBFC9009E4AC0 /* ResultViewController.swift in Sources */,
+				B12F6CC621446428006FEFA4 /* ProductTableViewCell.swift in Sources */,
 				B10EFF1A213E9876009E4AC0 /* Models.swift in Sources */,
 				B12F6CC02144237B006FEFA4 /* SpinnerButtonHelper.swift in Sources */,
 			);
