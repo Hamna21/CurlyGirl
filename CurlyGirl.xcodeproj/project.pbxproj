@@ -16,10 +16,12 @@
 		B10EFF10213DBFC9009E4AC0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF0F213DBFC9009E4AC0 /* ResultViewController.swift */; };
 		B10EFF19213E9876009E4AC0 /* HairAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF17213E9875009E4AC0 /* HairAPI.swift */; };
 		B10EFF1A213E9876009E4AC0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF18213E9876009E4AC0 /* Models.swift */; };
-		B10EFF1C213E98A9009E4AC0 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF1B213E98A8009E4AC0 /* RealmHelper.swift */; };
 		B10EFF1F213EAB2B009E4AC0 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF1E213EAB2B009E4AC0 /* QuestionTableViewCell.swift */; };
-		B10EFF21213EAD40009E4AC0 /* SpinnerButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF20213EAD40009E4AC0 /* SpinnerButtonHelper.swift */; };
 		B10EFF23213EBA5F009E4AC0 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10EFF22213EBA5F009E4AC0 /* ProductsViewController.swift */; };
+		B12F6CC02144237B006FEFA4 /* SpinnerButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F6CBE2144237B006FEFA4 /* SpinnerButtonHelper.swift */; };
+		B12F6CC12144237B006FEFA4 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12F6CBF2144237B006FEFA4 /* RealmHelper.swift */; };
+		B12F6CC2214423AA006FEFA4 /* RealmHelper.swift in Resources */ = {isa = PBXBuildFile; fileRef = B12F6CBF2144237B006FEFA4 /* RealmHelper.swift */; };
+		B12F6CC3214423AA006FEFA4 /* SpinnerButtonHelper.swift in Resources */ = {isa = PBXBuildFile; fileRef = B12F6CBE2144237B006FEFA4 /* SpinnerButtonHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +37,10 @@
 		B10EFF0F213DBFC9009E4AC0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		B10EFF17213E9875009E4AC0 /* HairAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HairAPI.swift; sourceTree = "<group>"; };
 		B10EFF18213E9876009E4AC0 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		B10EFF1B213E98A8009E4AC0 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		B10EFF1E213EAB2B009E4AC0 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
-		B10EFF20213EAD40009E4AC0 /* SpinnerButtonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerButtonHelper.swift; sourceTree = "<group>"; };
 		B10EFF22213EBA5F009E4AC0 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		B12F6CBE2144237B006FEFA4 /* SpinnerButtonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerButtonHelper.swift; sourceTree = "<group>"; };
+		B12F6CBF2144237B006FEFA4 /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
 		B90ADA5F5B5DF1B20864E4DF /* Pods-CurlyGirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CurlyGirl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CurlyGirl/Pods-CurlyGirl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,12 +85,12 @@
 		B10EFEFA213DAB9D009E4AC0 /* CurlyGirl */ = {
 			isa = PBXGroup;
 			children = (
+				B12F6CBD21442355006FEFA4 /* Utility */,
 				B10EFF16213E984E009E4AC0 /* Network */,
 				B10EFEFB213DAB9D009E4AC0 /* AppDelegate.swift */,
 				B10EFF0D213DABBB009E4AC0 /* Controllers */,
 				B10EFF1D213EAAE7009E4AC0 /* Views */,
 				B10EFF0E213DABCF009E4AC0 /* Assets */,
-				B10EFF15213E9815009E4AC0 /* Util */,
 				B10EFF07213DAB9E009E4AC0 /* Info.plist */,
 			);
 			path = CurlyGirl;
@@ -114,15 +116,6 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		B10EFF15213E9815009E4AC0 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				B10EFF20213EAD40009E4AC0 /* SpinnerButtonHelper.swift */,
-				B10EFF1B213E98A8009E4AC0 /* RealmHelper.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
 		B10EFF16213E984E009E4AC0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +131,15 @@
 				B10EFF1E213EAB2B009E4AC0 /* QuestionTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B12F6CBD21442355006FEFA4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B12F6CBF2144237B006FEFA4 /* RealmHelper.swift */,
+				B12F6CBE2144237B006FEFA4 /* SpinnerButtonHelper.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		B8F4A3B838509E15BFE84556 /* Pods */ = {
@@ -209,6 +211,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12F6CC2214423AA006FEFA4 /* RealmHelper.swift in Resources */,
+				B12F6CC3214423AA006FEFA4 /* SpinnerButtonHelper.swift in Resources */,
 				B10EFF06213DAB9E009E4AC0 /* LaunchScreen.storyboard in Resources */,
 				B10EFF03213DAB9E009E4AC0 /* Assets.xcassets in Resources */,
 				B10EFF01213DAB9D009E4AC0 /* Main.storyboard in Resources */,
@@ -279,15 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B10EFF21213EAD40009E4AC0 /* SpinnerButtonHelper.swift in Sources */,
 				B10EFEFE213DAB9D009E4AC0 /* MainViewController.swift in Sources */,
 				B10EFF19213E9876009E4AC0 /* HairAPI.swift in Sources */,
 				B10EFEFC213DAB9D009E4AC0 /* AppDelegate.swift in Sources */,
-				B10EFF1C213E98A9009E4AC0 /* RealmHelper.swift in Sources */,
 				B10EFF1F213EAB2B009E4AC0 /* QuestionTableViewCell.swift in Sources */,
+				B12F6CC12144237B006FEFA4 /* RealmHelper.swift in Sources */,
 				B10EFF23213EBA5F009E4AC0 /* ProductsViewController.swift in Sources */,
 				B10EFF10213DBFC9009E4AC0 /* ResultViewController.swift in Sources */,
 				B10EFF1A213E9876009E4AC0 /* Models.swift in Sources */,
+				B12F6CC02144237B006FEFA4 /* SpinnerButtonHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
